@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import './App.css';
-import {Provider, defaultTheme, Heading, Flex, Divider, Grid, View, Content, Image} from '@adobe/react-spectrum';
+import {Provider, defaultTheme, Flex, Grid, View, Image} from '@adobe/react-spectrum';
 import About from './components/About';
 import Work from './components/Work';
 import Footer from './components/Footer';
@@ -10,7 +10,7 @@ import mobileImage from './Mob-bg.jpeg';
 import ABheaderWhite from './AB-Header-White.svg';
 
 function App() {
-    const [windowWidth, setWindowWidth ] = useState(window.innerWidth);
+    const  setWindowWidth = window.innerWidth;
     const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
 
     const handleWindowResize = () => {

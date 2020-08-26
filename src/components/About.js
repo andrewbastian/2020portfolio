@@ -1,15 +1,13 @@
 import React from 'react';
-import AboutSvgWhite from '../AB-Header-White.svg';
+// import AboutSvgWhite from '../AB-Header-White.svg';
 import {
   ActionButton,
   Content,
-  Header,
   Dialog,
   DialogTrigger,
   Divider,
   Heading,
   Text,
-  Image
 } from '@adobe/react-spectrum';
 const About = () => {
     return ( 
