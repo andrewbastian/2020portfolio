@@ -77,7 +77,7 @@ const Contact = () => {
     <Dialog>
       <Heading>
         <Flex alignItems="center" gap="size-100">
-          <Text>Contact Me</Text>
+          <Text>Contact for newsletter</Text>
         </Flex>
       </Heading>
       <Header>
@@ -96,11 +96,57 @@ const Contact = () => {
       </Header>
       <Divider />
       <Content>
-        <Link>andrew.bastian@gmail.com</Link>
+        <Form onSubmit={handleSubmit}>
 
+          <TextField
+          name="firstName"
+          type="text"
+          label="First Name"
+          placeholder="John"
+          value={post.firstName}
+          
+          onChange={handleChange.setPost}
+          autoFocus />
+
+          <TextField
+          name="lastName"
+          type="text" 
+          label="Last Name" 
+          placeholder="Smith" 
+          value={post.lastName}
+          // onSubmit={handleSubmit}
+          onChange={handleChange}/>
+
+          <TextField
+          name="email"
+          type="text"
+          label="Email Address"
+          validationState={isEmailValid ? 'valid' : 'invalid'}
+          placeholder="Enter your email"
+          value={post.email}
+          // onSubmit={handleSubmit}
+          onChange={handleChange} />
+
+          <TextArea
+          name="message"
+          type="text"
+          validationState={isValid ? 'valid' : 'invalid'}
+          value={post.message}
+          placeholder="Write your message here"
+          // onSubmit={handleSubmit}
+          onChange={handleChange}
+          label="Message"
+          />
+        </Form>
       </Content>
-
-
+      <ButtonGroup>
+        <Button variant="secondary" onPress={close} >
+          Cancel
+        </Button>
+        <Button variant="cta" type='submit'>
+          Send
+        </Button>
+      </ButtonGroup>
     </Dialog>
   )}
 </DialogTrigger>
