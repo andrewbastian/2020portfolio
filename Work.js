@@ -39,7 +39,7 @@ const Work = () => {
               showGraphic={true}
               maxLine={2}
               minLine={1}
-              url="https://dazzling-darwin-feb2c0.netlify.app/"
+              url="https://watermeplese.netlify.app/"
         />
         <Text>
                 Design Hub:
@@ -49,7 +49,7 @@ const Work = () => {
               showGraphic={true}
               maxLine={2}
               minLine={1}
-              url="https://designhubx.com/"
+              url="https://designhubx.netlify.app/"
         />
         <Text>
         Pot-luck planner App:
