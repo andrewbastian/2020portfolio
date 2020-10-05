@@ -23,7 +23,7 @@ const Contact = () => {
 
   return (
 
-<DialogTrigger>
+<DialogTrigger isDismissable>
   <ActionButton>Contact</ActionButton>
   {(close) => (
     <Dialog>
