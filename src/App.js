@@ -7,10 +7,10 @@ import Footer from './components/Footer';
 import Contact from './components/Contact';
 import desktopImage from './Desk-bg.jpeg';
 import mobileImage from './Mob-bg.jpeg';
-import ABheaderWhite from './AB-Header-White.svg';
+import NamePlate from './NamePlate.svg';
 
 function App() {
-    const  setWindowWidth = window.innerWidth;
+    const setWindowWidth = window.innerWidth;
     const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
 
     const handleWindowResize = () => {
@@ -38,7 +38,7 @@ function App() {
 
             <View gridArea="header" display="flex" justifySelf="center" alignSelf="center">
             
-            <Image  src={ABheaderWhite} alt="LinkedinLogoWhite" marginTop="50%"
+            <Image  src={NamePlate} alt="NamePlateWhite" marginTop="50%"
         />
              
              </View>
