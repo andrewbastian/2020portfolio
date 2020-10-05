@@ -49,7 +49,7 @@ const Contact = () => {
       <Divider />
       <Content>
         <Link> 
-        <a href="mailto:andrew.bastian@gmail.com" target="_blank">andrew.bastian@gmail.com</a>
+        <a href="mailto:andrew.bastian@gmail.com" target="_blank" rel="noopener noreferrer">andrew.bastian@gmail.com</a>
         </Link>
 
       </Content>
