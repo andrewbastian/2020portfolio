@@ -5,18 +5,12 @@ import About from './components/About';
 import Work from './components/Work';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
-import desktopImage from './Desk-bg.jpeg';
+import desktopImage from './assets/Desk-bg.jpeg';
 // import mobileImage from './Mob-bg.jpeg';
-// import LoadingScreen from './components/LoadingScreen';
-import NamePlate from './assets/SVG/websiteHeaderWhite.svg';
+import LoadingScreen from './components/LoadingScreen';
+import NamePlate from './assets/websiteHeaderWhite.svg';
 
 function App() {
-    // const setWindowWidth = window.innerWidth;
-    // const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
-    // const headWidth = window.innerWidth >=650 ? '40%' : '60%'
-    // const handleWindowResize = () => {
-    //        setWindowWidth(window.innerWidth);
-    //    };
     const [loading, setLoading] = useState(true)
        useEffect(() => {
            setTimeout(() => setLoading(false), 6000)

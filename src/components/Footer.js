@@ -1,7 +1,7 @@
 import React from 'react';
 
-import GithubLogoWhite from '../github-logo-white.svg';
-import LinkedinLogoWhite from '../Linkedinlogo-white.svg';
+import GithubLogoWhite from '../assets/github-logo-white.svg';
+import LinkedinLogoWhite from '../assets/Linkedinlogo-white.svg';
 
 
 import {
