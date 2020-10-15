@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import './App.css';
 import {Provider, defaultTheme, Flex, Grid, View, Image} from '@adobe/react-spectrum';
 import About from './components/About';
@@ -6,39 +6,39 @@ import Work from './components/Work';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import desktopImage from './Desk-bg.jpeg';
-import mobileImage from './Mob-bg.jpeg';
-import NamePlate from './NamePlate.svg';
+// import mobileImage from './Mob-bg.jpeg';
+// import LoadingScreen from './components/LoadingScreen';
+import NamePlate from './assets/SVG/websiteHeaderWhite.svg';
 
 function App() {
-    const setWindowWidth = window.innerWidth;
-    const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
-
-    const handleWindowResize = () => {
-           setWindowWidth(window.innerWidth);
-       };
-
+    // const setWindowWidth = window.innerWidth;
+    // const imageUrl = window.innerWidth >= 650 ? desktopImage : mobileImage;
+    // const headWidth = window.innerWidth >=650 ? '40%' : '60%'
+    // const handleWindowResize = () => {
+    //        setWindowWidth(window.innerWidth);
+    //    };
+    const [loading, setLoading] = useState(true)
        useEffect(() => {
-           window.addEventListener('resize', handleWindowResize);
-
-           return () => {
-               window.removeEventListener('resize', handleWindowResize);
-           }
-       });
+           setTimeout(() => setLoading(false), 6000)
+       }, []);
   return (
-    
-    <Provider theme={defaultTheme}>
-      <div className="App" style={{backgroundImage: `url(${imageUrl})` }}>
+    <>
+    { loading === false ? (
+    <Provider theme={defaultTheme} colorScheme='dark'>
+
+      <div className="App" style={{backgroundImage: `url(${desktopImage})` }}>
           <Grid
             areas={['header  header', 'content content', 'footer  footer']}
             columns={['1fr', '3fr']}
-            rows={['size-1000', 'auto', 'size-1000']}
+            rows={['auto', 'auto', 'auto']}
             height="auto"
             gap="size-100"
           >
 
-            <View gridArea="header" display="flex" justifySelf="center" alignSelf="center">
+            <View gridArea="header" display="flex" justifySelf="center" alignSelf="center" marginTop='5%' width='size-5000'>
             
-            <Image  src={NamePlate} alt="NamePlateWhite" marginTop="50%"
+            <Image  src={NamePlate} alt="NamePlateWhite" margin="auto" justifySelf='center'
+            
         />
              
              </View>
@@ -49,7 +49,7 @@ function App() {
             justifySelf="center" 
             marginTop="size-100" > 
 
-            <Flex direction="column" width="size-2000" gap="size-200" marginTop="70%">
+            <Flex direction="column" width="size-2000" gap="size-200" marginTop="20%">
               <About/>
               <Work/>
               <Contact/>
@@ -67,7 +67,10 @@ function App() {
           </Grid>
         </div>
     </Provider>
-   
+    ) : (
+    <LoadingScreen />
+    )}
+   </>
   );
 }
 
