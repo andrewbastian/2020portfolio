@@ -31,35 +31,51 @@ const Work = () => {
       </Header>
       <Divider />
       <Content>
+      <Link>
+      <a href="https://github.com/andrewbastian/watermyplants-frontend">
        <Text>
-        Water My Plants App:
-         </Text>
+        Water My Plants App: Repository Link
+       </Text>
+       </a>
+      </Link>
           <ReactTinyLink
               cardSize="small"
-              showGraphic={true}
+              showGraphic={false}
               maxLine={2}
               minLine={1}
               url="https://watermeplese.netlify.app/"
+              header="Water My Plants"
+              description="A web app to help user's track their plant's water schedules"
         />
-        <Text>
-                Design Hub:
+        <Link>
+        <a href="https://github.com/andrewbastian/designhub-frontend">
+          <Text>
+                Design Hub: Repository Link
          </Text>
+         </a>
+        </Link>
           <ReactTinyLink
               cardSize="small"
-              showGraphic={true}
+              showGraphic={false}
               maxLine={2}
               minLine={1}
               url="https://designhubx.netlify.app/"
+              header="Design Hub"
+              description="A collaborative asset platform for designers to share their work"
         />
-        <Text>
-        Pot-luck planner App:
+
+          <Text>
+                Pot-luck planner App:
          </Text>
+
           <ReactTinyLink
               cardSize="small"
-              showGraphic={true}
+              showGraphic={false}
               maxLine={2}
               minLine={1}
               url="https://keen-nightingale-e678d3.netlify.app/"
+              header="Potluck Planner"
+              description="A web app to help user's organize and plan potlucks"
         />
 
       </Content>
