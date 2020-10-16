@@ -79,19 +79,20 @@ const Work = () => {
               header="Secret Family Cookbook"
               description="A marketing page for the Secret Family Recipe Cookbook web-app"
         />
-          <Text>
-                Pot-luck planner App:
-         </Text>
-
+          <Link>
+          <a href="https://github.com/andrewbastian/potluck-planner">
+          <Text>Pot-luck planner App: Repository Link</Text>
+          </a>
+          </Link>  
           <ReactTinyLink
-              cardSize="small"
+              cardSize='small'
               showGraphic={false}
               maxLine={2}
               minLine={1}
-              url="https://keen-nightingale-e678d3.netlify.app/"
-              header="Potluck Planner"
+              url='https://goodluck-potluck.netlify.app/login_page'
+              header='Potluck Planner'
               description="A web app to help user's organize and plan potlucks"
-        />
+          />
 
       </Content>
     </Dialog>
