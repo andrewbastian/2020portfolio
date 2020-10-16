@@ -1,5 +1,5 @@
 import React from 'react';
-import Loading from '../Loading.gif';
+import Loading from '../assets/Loading.gif';
 const LoadingScreen = () => {
     return (
         <div>

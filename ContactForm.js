@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import LinkedinLogoWhite from '../Linkedinlogo-white.svg';
+import LinkedinLogoWhite from '../assets/Linkedinlogo-white.svg';
 
 import {useTextField} from '@react-aria/textfield'
 
