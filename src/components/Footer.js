@@ -8,6 +8,7 @@ import { Image, Link } from '@adobe/react-spectrum';
 const Footer = () => {
     return (
         <>
+         
             <Link>
                 <a href='https://github.com/andrewbastian'>
                     <Image src={GithubLogoWhite} alt='GithubLogoWhite' objectFit='contain' maxWidth='35px' />

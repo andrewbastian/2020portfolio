@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { ActionButton,
          Content,
          Dialog, 
@@ -30,7 +31,9 @@ const About = () => {
                         If I 'm not programming, I'm likely playing music, building a piece of furniture, or trying to
                         make my daughter laugh.If you 'd like to know more, feel free to get in touch.
                     </Text>
+
                 </Content>
+
             </Dialog>
         </DialogTrigger>
     );
