@@ -44,7 +44,7 @@ function App() {
                                     <About />
                                     <Work />
                                     <Contact />
-                                    <Resume />
+                                   
                                 </Flex>
                             </View>
                             <View gridArea='footer' margin='auto'>
