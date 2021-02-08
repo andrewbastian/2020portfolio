@@ -12,7 +12,7 @@ This site also features a loading page created in Adobe After Effects and custom
 
 The large GIF for the loading page has been added to the repository with `Git Large File Storage`
 
-![Loading GIF](https://github.com/andrewbastian/2020portfolio/blob/master/src/assets/Loading.gif "After Effects loading page")
+![Loading GIF](https://github.com/andrewbastian/2020portfolio/blob/master/src/assets/Com64Loading.gif "After Effects loading page")
 
 ![Git Hub Logo](https://github.com/andrewbastian/2020portfolio/blob/master/src/assets/unused/github-logo-black.gif "Git Hub Logo")
 ![Linkedin Logo](https://github.com/andrewbastian/2020portfolio/blob/master/src/assets/unused/linkedin-logo-black.gif "Linkedin Logo")
