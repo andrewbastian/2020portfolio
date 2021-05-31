@@ -9,7 +9,7 @@ import Contact from './components/Contact';
 import desktopImage from './assets/Desk-bg.jpeg';
 // import mobileImage from './Mob-bg.jpeg';
 import LoadingScreen from './components/LoadingScreen';
-import NamePlate from './assets/HeaderGradient.gif';
+import NamePlate from './assets/NeonName.gif';
 
 function App() {
     const [loading, setLoading] = useState(true);
