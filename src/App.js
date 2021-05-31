@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import { Provider, defaultTheme, Flex, Grid, View, Image } from '@adobe/react-spectrum';
 import About from './components/About';
-import Resume from './components/Resume';
 import Work from './components/Work';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
