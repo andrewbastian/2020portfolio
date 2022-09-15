@@ -5,15 +5,18 @@
   "dependencies": {
     "@adobe/react-spectrum": "^3.1.0",
     "@react-aria/textfield": "^3.1.0",
+    "@react-three/drei": "^9.29.1",
+    "@react-three/fiber": "^8.7.2",
     "@spectrum-icons/workflow": "^3.1.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18",
+    "react-dom": "^18",
     "react-scripts": "3.4.3",
-    "react-tiny-link": "^3.6.0"
+    "react-tiny-link": "^3.6.0",
+    "three": "^0.144.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -37,13 +40,6 @@
     ]
   },
   "devDependencies": {
-    "eslint-config-airbnb": "18.2.0",
-    "eslint-config-prettier": "^6.12.0",
-    "eslint-plugin-import": "^2.21.2",
-    "eslint-plugin-jsx-a11y": "^6.3.0",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.0",
-    "eslint-plugin-react-hooks": "4.0.0",
     "file-loader": "^6.0.0"
   }
 }
